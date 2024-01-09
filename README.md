@@ -25,6 +25,7 @@ The executable file run as either a foreground process or background process.
 * A background job does not block the shell process while the job is executing. We use ampersand (&) operator to indicate the executable will run as a background job.
 > To guarantee that the child process is reaped after getting terminated, we use `SIGCHLD` signal
 
+### local executables
 To run the executable file `helloWorld` as a foreground job, simply run as follows
 ```
 prompt > helloWorld
