@@ -40,3 +40,6 @@ prompt > helloWorld &
 - Stopped job : When the job is in a stopped state, user could either resume the process into background/foreground mode, or to kill the process. User could accomplish this by inputting `fg` or `bg` commands followed by job_id or pid. The command would look like this if the user puts a pid: `fg 12345`. If the user puts a pid, ampersand should be placed right before the id starts: `fg %12345`. Background job will have a similar format except for it has `bg` instead of `fg`.
 - Background job : When the job is running in background mode, user could turn it into foreground mode by inputting the command `fg` with job_id or pid. It could also receive kill (with job_id or pid) where it would terminate the process.
 > To access which processes are running currently, user may type `jobs` into the prompt to show the background and stopped jobs (`jobs` command won't be typed when the process is running in foreground mode because it blocks and wait for the child process to fully execute and terminated).
+
+Below is a rough diagram of how the job control works in the program.
+![commandflow](https://github.com/ttogom/smplshll/assets/16681048/db2ae53f-6e39-459a-8c8f-4c9bc4591801)
