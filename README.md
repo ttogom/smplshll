@@ -43,4 +43,4 @@ prompt > helloWorld &
 
 Below is a rough diagram of how the job control works in the program.
 
-![commandflow](https://github.com/ttogom/smplshll/assets/16681048/db2ae53f-6e39-459a-8c8f-4c9bc4591801)
+![controlflow](https://github.com/ttogom/smplshll/assets/16681048/1f20b5ae-1f8e-4922-8ff8-54ae29448b37)
