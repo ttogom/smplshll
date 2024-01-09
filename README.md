@@ -44,3 +44,20 @@ prompt > helloWorld &
 Below is a rough diagram of how the job control works in the program.
 
 ![controlflow](https://github.com/ttogom/smplshll/assets/16681048/1f20b5ae-1f8e-4922-8ff8-54ae29448b37)
+
+### built-in commands
+The shell supports the most basic built-in commands such as `cd`, `pwd`, and `quit`.
+It serves to navigate where the executables are and to terminate the program completely.
+
+## I/O redirection
+A special notation `>`, `<`, `>>` will be inerpreted by the shell as a command for I/O redirection.
+* `>` : Redirects standard output to a file
+* `<` : Redirects standard input from a file
+* `>>` : Redirects standard output and append to a file
+> Note that users are allowed to mix `>` and `<` commands. Look below for an example
+
+Example uses
+```prompt > do > files.txt```
+```prompt > sort < files.txt```
+```prompt > divide < nums.txt > quotient.txt```
+```prompt > do >> files.txt```
