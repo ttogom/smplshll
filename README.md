@@ -42,4 +42,5 @@ prompt > helloWorld &
 > To access which processes are running currently, user may type `jobs` into the prompt to show the background and stopped jobs (`jobs` command won't be typed when the process is running in foreground mode because it blocks and wait for the child process to fully execute and terminated).
 
 Below is a rough diagram of how the job control works in the program.
+
 ![commandflow](https://github.com/ttogom/smplshll/assets/16681048/db2ae53f-6e39-459a-8c8f-4c9bc4591801)
