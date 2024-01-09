@@ -56,7 +56,7 @@ A special notation `>`, `<`, `>>` will be inerpreted by the shell as a command f
 * `>>` : Redirects standard output and append to a file
 > Note that users are allowed to mix `>` and `<` commands. Look below for an example
 
-Example uses
+Example uses\
 ```prompt > do > files.txt```\
 ```prompt > sort < files.txt```\
 ```prompt > divide < nums.txt > quotient.txt```\
