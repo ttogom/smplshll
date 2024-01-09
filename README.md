@@ -36,7 +36,7 @@ prompt > helloWorld &
 ```
 
 ### job control
-- Foreground job : When the job is running in foreground mode, user could press Ctrl+C on the keyboard to kill the process which will call SIGCHLD handler. User can also press Ctrl+Z which would invoke SIGSTP and put the foreground job into a stopped state.
+- Foreground job : When the job is running in foreground mode, user could press `Ctrl+C` on the keyboard to kill the process which will call `SIGCHLD` handler. User can also press `Ctrl+Z` which would invoke `SIGSTP` and put the foreground job into a stopped state.
 - Stopped job : When the job is in a stopped state, user could either resume the process into background/foreground mode, or to kill the process. User could accomplish this by inputting `fg` or `bg` commands followed by job_id or pid. The command would look like this if the user puts a pid: `fg 12345`. If the user puts a pid, ampersand should be placed right before the id starts: `fg %12345`. Background job will have a similar format except for it has `bg` instead of `fg`.
 - Background job : When the job is running in background mode, user could turn it into foreground mode by inputting the command `fg` with job_id or pid. It could also receive kill (with job_id or pid) where it would terminate the process.
 > To access which processes are running currently, user may type `jobs` into the prompt to show the background and stopped jobs (`jobs` command won't be typed when the process is running in foreground mode because it blocks and wait for the child process to fully execute and terminated).
