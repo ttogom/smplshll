@@ -14,6 +14,7 @@ When succesfully executed, the shell will print a prompt line for the user to in
 prompt > 
 ```
 
+## commands
 There are two types of commands which the shell supports;
 1. Local executables, and
 2. Built-in commands
